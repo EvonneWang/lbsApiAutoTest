@@ -1,0 +1,402 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Search Success!"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "YearsOfResidence",
+          "CustomerID",
+          "Gender",
+          "MobilePhoneNumber",
+          "EmployerCompanyName",
+          "CompanyAddress",
+          "IssueCountry",
+          "MonthlySalary",
+          "CustomerNumber",
+          "Education",
+          "WeChatID",
+          "PermanentResidenceStatus",
+          "ID",
+          "ResidentialAddress",
+          "CountryCode",
+          "DateOfBirth",
+          "Position",
+          "FirstName",
+          "YearsOfServices",
+          "MailingAddress",
+          "Nationality",
+          "EmailAddress",
+          "MaritalStatus",
+          "Occupation",
+          "CompanyPhoneNumber",
+          "ChineseName",
+          "ClearingCode",
+          "Accommodation",
+          "LastName",
+          "ResidencePhoneNumber",
+          "BranchCode"
+        ],
+        "properties": {
+          "YearsOfResidence": {
+            "$id": "#/properties/data/items/properties/YearsOfResidence",
+            "type": "integer",
+            "title": "The Yearsofresidence Schema",
+            "default": 0,
+            "examples": [
+              35
+            ]
+          },
+          "CustomerID": {
+            "$id": "#/properties/data/items/properties/CustomerID",
+            "type": "string",
+            "title": "The Customerid Schema",
+            "default": "",
+            "examples": [
+              "T111112058"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Gender": {
+            "$id": "#/properties/data/items/properties/Gender",
+            "type": "string",
+            "title": "The Gender Schema",
+            "default": "",
+            "examples": [
+              "M"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "MobilePhoneNumber": {
+            "$id": "#/properties/data/items/properties/MobilePhoneNumber",
+            "type": "integer",
+            "title": "The Mobilephonenumber Schema",
+            "default": 0,
+            "examples": [
+              90234571
+            ]
+          },
+          "EmployerCompanyName": {
+            "$id": "#/properties/data/items/properties/EmployerCompanyName",
+            "type": "string",
+            "title": "The Employercompanyname Schema",
+            "default": "",
+            "examples": [
+              "Ginger Advertising Limited"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CompanyAddress": {
+            "$id": "#/properties/data/items/properties/CompanyAddress",
+            "type": "string",
+            "title": "The Companyaddress Schema",
+            "default": "",
+            "examples": [
+              "8/F, Gloucester Tower, The Landmark, 15 Queen's Road central, Central District"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "IssueCountry": {
+            "$id": "#/properties/data/items/properties/IssueCountry",
+            "type": "string",
+            "title": "The Issuecountry Schema",
+            "default": "",
+            "examples": [
+              "HongKong"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "MonthlySalary": {
+            "$id": "#/properties/data/items/properties/MonthlySalary",
+            "type": "integer",
+            "title": "The Monthlysalary Schema",
+            "default": 0,
+            "examples": [
+              80000
+            ]
+          },
+          "CustomerNumber": {
+            "$id": "#/properties/data/items/properties/CustomerNumber",
+            "type": "string",
+            "title": "The Customernumber Schema",
+            "default": "",
+            "examples": [
+              "001000000993"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Education": {
+            "$id": "#/properties/data/items/properties/Education",
+            "type": "string",
+            "title": "The Education Schema",
+            "default": "",
+            "examples": [
+              "U"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "WeChatID": {
+            "$id": "#/properties/data/items/properties/WeChatID",
+            "type": "string",
+            "title": "The Wechatid Schema",
+            "default": "",
+            "examples": [
+              "FJ17839282"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "PermanentResidenceStatus": {
+            "$id": "#/properties/data/items/properties/PermanentResidenceStatus",
+            "type": "string",
+            "title": "The Permanentresidencestatus Schema",
+            "default": "",
+            "examples": [
+              "Y"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ID": {
+            "$id": "#/properties/data/items/properties/ID",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "00bde43e124446a68dd41b7691a3779f"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ResidentialAddress": {
+            "$id": "#/properties/data/items/properties/ResidentialAddress",
+            "type": "string",
+            "title": "The Residentialaddress Schema",
+            "default": "",
+            "examples": [
+              "1/F  Room 2242 516 Castle Road,North Point,Hong Kong"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CountryCode": {
+            "$id": "#/properties/data/items/properties/CountryCode",
+            "type": "string",
+            "title": "The Countrycode Schema",
+            "default": "",
+            "examples": [
+              "HK"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "DockerId": {
+            "$id": "#/properties/data/items/properties/DockerId",
+            "type": "string",
+            "title": "The Dockerid Schema",
+            "default": "",
+            "examples": [
+              ""
+            ],
+            "pattern": "^(.*)$"
+          },
+          "DateOfBirth": {
+            "$id": "#/properties/data/items/properties/DateOfBirth",
+            "type": "integer",
+            "title": "The Dateofbirth Schema",
+            "default": 0,
+            "examples": [
+              19750825000000
+            ]
+          },
+          "Position": {
+            "$id": "#/properties/data/items/properties/Position",
+            "type": "string",
+            "title": "The Position Schema",
+            "default": "",
+            "examples": [
+              "Advertising Account Manager"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "FirstName": {
+            "$id": "#/properties/data/items/properties/FirstName",
+            "type": "string",
+            "title": "The Firstname Schema",
+            "default": "",
+            "examples": [
+              "chuen chung"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "SandBoxId": {
+            "$id": "#/properties/data/items/properties/SandBoxId",
+            "type": "string",
+            "title": "The Sandboxid Schema",
+            "default": "",
+            "examples": [
+              "cfbb6dabc6d043faadb2060f10323431"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "YearsOfServices": {
+            "$id": "#/properties/data/items/properties/YearsOfServices",
+            "type": "integer",
+            "title": "The Yearsofservices Schema",
+            "default": 0,
+            "examples": [
+              20
+            ]
+          },
+          "MailingAddress": {
+            "$id": "#/properties/data/items/properties/MailingAddress",
+            "type": "string",
+            "title": "The Mailingaddress Schema",
+            "default": "",
+            "examples": [
+              "1/F  Room 2242 516 Castle Road,North Point,Hong Kong"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Nationality": {
+            "$id": "#/properties/data/items/properties/Nationality",
+            "type": "string",
+            "title": "The Nationality Schema",
+            "default": "",
+            "examples": [
+              "HongKong"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "EmailAddress": {
+            "$id": "#/properties/data/items/properties/EmailAddress",
+            "type": "string",
+            "title": "The Emailaddress Schema",
+            "default": "",
+            "examples": [
+              "ChuenChung@gmail.com"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "MaritalStatus": {
+            "$id": "#/properties/data/items/properties/MaritalStatus",
+            "type": "string",
+            "title": "The Maritalstatus Schema",
+            "default": "",
+            "examples": [
+              "S"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Occupation": {
+            "$id": "#/properties/data/items/properties/Occupation",
+            "type": "string",
+            "title": "The Occupation Schema",
+            "default": "",
+            "examples": [
+              "Advertising"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CompanyPhoneNumber": {
+            "$id": "#/properties/data/items/properties/CompanyPhoneNumber",
+            "type": "integer",
+            "title": "The Companyphonenumber Schema",
+            "default": 0,
+            "examples": [
+              23745677
+            ]
+          },
+          "ChineseName": {
+            "$id": "#/properties/data/items/properties/ChineseName",
+            "type": "string",
+            "title": "The Chinesename Schema",
+            "default": "",
+            "examples": [
+              "苗川松"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ClearingCode": {
+            "$id": "#/properties/data/items/properties/ClearingCode",
+            "type": "string",
+            "title": "The Clearingcode Schema",
+            "default": "",
+            "examples": [
+              "0001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Accommodation": {
+            "$id": "#/properties/data/items/properties/Accommodation",
+            "type": "string",
+            "title": "The Accommodation Schema",
+            "default": "",
+            "examples": [
+              "S"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "LastName": {
+            "$id": "#/properties/data/items/properties/LastName",
+            "type": "string",
+            "title": "The Lastname Schema",
+            "default": "",
+            "examples": [
+              "Miu"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ResidencePhoneNumber": {
+            "$id": "#/properties/data/items/properties/ResidencePhoneNumber",
+            "type": "integer",
+            "title": "The Residencephonenumber Schema",
+            "default": 0,
+            "examples": [
+              23745672
+            ]
+          },
+          "BranchCode": {
+            "$id": "#/properties/data/items/properties/BranchCode",
+            "type": "string",
+            "title": "The Branchcode Schema",
+            "default": "",
+            "examples": [
+              "001"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

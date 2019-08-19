@@ -1,0 +1,30 @@
+{
+  "customer": {
+    "accommodation": "S",
+    "chinesename": "王研",
+    "companyaddress": "228 Pok Fu Lam Road,Aberdeen,Hong Kong",
+    "companyphonenumber": 24827781,
+    "customerid": "U735535(9)",
+    "dateofbirth": 178163911000,
+    "education": "U",
+    "emailaddress": "happyday@hotmail.com",
+    "employercompanyname": "Happy Realty",
+    "firstname": "Yan",
+    "gender": "M",
+    "issuecountry": "China",
+    "lastname": "Wong",
+    "mailingaddress": "551 Austin Road,Tsim Sha Tsui,Kowloon",
+    "maritalstatus": "S",
+    "mobilephonenumber": 64657884,
+    "monthlysalary": 19000,
+    "nationality": "China",
+    "occupation": "Software",
+    "permanentresidencestatus": "Y",
+    "position": "Senior Manager",
+    "residencephonenumber": 34828869,
+    "residentialaddress": "779 Yi Chun Street, Sai Kung, New Territory",
+    "wechatid": "W3456754",
+    "yearsofresidence": 3,
+    "yearsofservices": 2
+  }
+}

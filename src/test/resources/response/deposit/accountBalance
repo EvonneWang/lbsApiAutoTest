@@ -1,0 +1,105 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "accountnumber",
+        "currencycode",
+        "ledgerbalance",
+        "availablebalance",
+        "holdingbalance",
+        "lastupdatedate"
+      ],
+      "properties": {
+        "accountnumber": {
+          "$id": "#/properties/data/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK110001001000000002002"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "currencycode": {
+          "$id": "#/properties/data/properties/currencycode",
+          "type": "string",
+          "title": "The Currencycode Schema",
+          "default": "",
+          "examples": [
+            "HKD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "ledgerbalance": {
+          "$id": "#/properties/data/properties/ledgerbalance",
+          "type": "number",
+          "title": "The Ledgerbalance Schema",
+          "default": 0,
+          "examples": [
+            300
+          ]
+        },
+        "availablebalance": {
+          "$id": "#/properties/data/properties/availablebalance",
+          "type": "number",
+          "title": "The Availablebalance Schema",
+          "default": 0,
+          "examples": [
+            300
+          ]
+        },
+        "holdingbalance": {
+          "$id": "#/properties/data/properties/holdingbalance",
+          "type": "number",
+          "title": "The Holdingbalance Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "lastupdatedate": {
+          "$id": "#/properties/data/properties/lastupdatedate",
+          "type": "number",
+          "title": "The Lastupdatedate Schema",
+          "default": 0,
+          "examples": [
+            1559786311000
+          ]
+        }
+      }
+    }
+  }
+}

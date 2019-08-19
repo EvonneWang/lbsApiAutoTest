@@ -1,0 +1,449 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "accountnumber",
+        "currencycode",
+        "repaymentaccountnumber",
+        "accountstatus",
+        "associatedContract",
+        "customerInfo"
+      ],
+      "properties": {
+        "accountnumber": {
+          "$id": "#/properties/data/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK620001001000005086600"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "currencycode": {
+          "$id": "#/properties/data/properties/currencycode",
+          "type": "string",
+          "title": "The Currencycode Schema",
+          "default": "",
+          "examples": [
+            "HKD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "repaymentaccountnumber": {
+          "$id": "#/properties/data/properties/repaymentaccountnumber",
+          "type": "string",
+          "title": "The Repaymentaccountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK720001001000000001001"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "accountstatus": {
+          "$id": "#/properties/data/properties/accountstatus",
+          "type": "string",
+          "title": "The Accountstatus Schema",
+          "default": "",
+          "examples": [
+            "A"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "associatedContract": {
+          "$id": "#/properties/data/properties/associatedContract",
+          "type": "array",
+          "title": "The Associatedcontract Schema",
+          "items": {
+            "$id": "#/properties/data/properties/associatedContract/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "contractNumber"
+            ],
+            "properties": {
+              "contractNumber": {
+                "$id": "#/properties/data/properties/associatedContract/items/properties/contractNumber",
+                "type": "string",
+                "title": "The Contractnumber Schema",
+                "default": "",
+                "examples": [
+                  "000000001"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "customerInfo": {
+          "$id": "#/properties/data/properties/customerInfo",
+          "type": "object",
+          "title": "The Customerinfo Schema",
+          "required": [
+            "countrycode",
+            "clearingcode",
+            "branchcode",
+            "customernumber",
+            "mobilephonenumber",
+            "customerid",
+            "issuecountry",
+            "dateofbirth",
+            "chinesename",
+            "gender",
+            "nationality",
+            "permanentresidencestatus",
+            "maritalstatus",
+            "education",
+            "residentialaddress",
+            "mailingaddress",
+            "residencephonenumber",
+            "wechatid",
+            "accommodation",
+            "yearsofresidence",
+            "occupation",
+            "employercompanyname",
+            "position",
+            "companyaddress",
+            "companyphonenumber",
+            "yearsofservices",
+            "monthlysalary",
+            "emailaddress",
+            "firstname",
+            "lastname"
+          ],
+          "properties": {
+            "countrycode": {
+              "$id": "#/properties/data/properties/customerInfo/properties/countrycode",
+              "type": "string",
+              "title": "The Countrycode Schema",
+              "default": "",
+              "examples": [
+                "HK"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "clearingcode": {
+              "$id": "#/properties/data/properties/customerInfo/properties/clearingcode",
+              "type": "string",
+              "title": "The Clearingcode Schema",
+              "default": "",
+              "examples": [
+                "0001"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "branchcode": {
+              "$id": "#/properties/data/properties/customerInfo/properties/branchcode",
+              "type": "string",
+              "title": "The Branchcode Schema",
+              "default": "",
+              "examples": [
+                "001"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "customernumber": {
+              "$id": "#/properties/data/properties/customerInfo/properties/customernumber",
+              "type": "string",
+              "title": "The Customernumber Schema",
+              "default": "",
+              "examples": [
+                "001000000001"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "mobilephonenumber": {
+              "$id": "#/properties/data/properties/customerInfo/properties/mobilephonenumber",
+              "type": "string",
+              "title": "The Mobilephonenumber Schema",
+              "default": "",
+              "examples": [
+                "64657884"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "customerid": {
+              "$id": "#/properties/data/properties/customerInfo/properties/customerid",
+              "type": "string",
+              "title": "The Customerid Schema",
+              "default": "",
+              "examples": [
+                "U735535(9)"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "issuecountry": {
+              "$id": "#/properties/data/properties/customerInfo/properties/issuecountry",
+              "type": "string",
+              "title": "The Issuecountry Schema",
+              "default": "",
+              "examples": [
+                "China"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "dateofbirth": {
+              "$id": "#/properties/data/properties/customerInfo/properties/dateofbirth",
+              "type": "integer",
+              "title": "The Dateofbirth Schema",
+              "default": 0,
+              "examples": [
+                178163911000
+              ]
+            },
+            "chinesename": {
+              "$id": "#/properties/data/properties/customerInfo/properties/chinesename",
+              "type": "string",
+              "title": "The Chinesename Schema",
+              "default": "",
+              "examples": [
+                "王研"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "gender": {
+              "$id": "#/properties/data/properties/customerInfo/properties/gender",
+              "type": "string",
+              "title": "The Gender Schema",
+              "default": "",
+              "examples": [
+                "M"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "nationality": {
+              "$id": "#/properties/data/properties/customerInfo/properties/nationality",
+              "type": "string",
+              "title": "The Nationality Schema",
+              "default": "",
+              "examples": [
+                "China"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "permanentresidencestatus": {
+              "$id": "#/properties/data/properties/customerInfo/properties/permanentresidencestatus",
+              "type": "string",
+              "title": "The Permanentresidencestatus Schema",
+              "default": "",
+              "examples": [
+                "Y"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "maritalstatus": {
+              "$id": "#/properties/data/properties/customerInfo/properties/maritalstatus",
+              "type": "string",
+              "title": "The Maritalstatus Schema",
+              "default": "",
+              "examples": [
+                "S"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "education": {
+              "$id": "#/properties/data/properties/customerInfo/properties/education",
+              "type": "string",
+              "title": "The Education Schema",
+              "default": "",
+              "examples": [
+                "U"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "residentialaddress": {
+              "$id": "#/properties/data/properties/customerInfo/properties/residentialaddress",
+              "type": "string",
+              "title": "The Residentialaddress Schema",
+              "default": "",
+              "examples": [
+                "779 Yi Chun Street, Sai Kung, New Territory"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "mailingaddress": {
+              "$id": "#/properties/data/properties/customerInfo/properties/mailingaddress",
+              "type": "string",
+              "title": "The Mailingaddress Schema",
+              "default": "",
+              "examples": [
+                "551 Austin Road,Tsim Sha Tsui,Kowloon"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "residencephonenumber": {
+              "$id": "#/properties/data/properties/customerInfo/properties/residencephonenumber",
+              "type": "string",
+              "title": "The Residencephonenumber Schema",
+              "default": "",
+              "examples": [
+                "34828869"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "wechatid": {
+              "$id": "#/properties/data/properties/customerInfo/properties/wechatid",
+              "type": "string",
+              "title": "The Wechatid Schema",
+              "default": "",
+              "examples": [
+                "W3456754"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "accommodation": {
+              "$id": "#/properties/data/properties/customerInfo/properties/accommodation",
+              "type": "string",
+              "title": "The Accommodation Schema",
+              "default": "",
+              "examples": [
+                "S"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "yearsofresidence": {
+              "$id": "#/properties/data/properties/customerInfo/properties/yearsofresidence",
+              "type": "integer",
+              "title": "The Yearsofresidence Schema",
+              "default": 0,
+              "examples": [
+                3
+              ]
+            },
+            "occupation": {
+              "$id": "#/properties/data/properties/customerInfo/properties/occupation",
+              "type": "string",
+              "title": "The Occupation Schema",
+              "default": "",
+              "examples": [
+                "Software"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "employercompanyname": {
+              "$id": "#/properties/data/properties/customerInfo/properties/employercompanyname",
+              "type": "string",
+              "title": "The Employercompanyname Schema",
+              "default": "",
+              "examples": [
+                "Happy Realty"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "position": {
+              "$id": "#/properties/data/properties/customerInfo/properties/position",
+              "type": "string",
+              "title": "The Position Schema",
+              "default": "",
+              "examples": [
+                "Senior Manager"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "companyaddress": {
+              "$id": "#/properties/data/properties/customerInfo/properties/companyaddress",
+              "type": "string",
+              "title": "The Companyaddress Schema",
+              "default": "",
+              "examples": [
+                "228 Pok Fu Lam Road,Aberdeen,Hong Kong"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "companyphonenumber": {
+              "$id": "#/properties/data/properties/customerInfo/properties/companyphonenumber",
+              "type": "string",
+              "title": "The Companyphonenumber Schema",
+              "default": "",
+              "examples": [
+                "24827781"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "yearsofservices": {
+              "$id": "#/properties/data/properties/customerInfo/properties/yearsofservices",
+              "type": "integer",
+              "title": "The Yearsofservices Schema",
+              "default": 0,
+              "examples": [
+                2
+              ]
+            },
+            "monthlysalary": {
+              "$id": "#/properties/data/properties/customerInfo/properties/monthlysalary",
+              "type": "integer",
+              "title": "The Monthlysalary Schema",
+              "default": 0,
+              "examples": [
+                19000
+              ]
+            },
+            "emailaddress": {
+              "$id": "#/properties/data/properties/customerInfo/properties/emailaddress",
+              "type": "string",
+              "title": "The Emailaddress Schema",
+              "default": "",
+              "examples": [
+                "happyday@hotmail.com"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "firstname": {
+              "$id": "#/properties/data/properties/customerInfo/properties/firstname",
+              "type": "string",
+              "title": "The Firstname Schema",
+              "default": "",
+              "examples": [
+                "Yan"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "lastname": {
+              "$id": "#/properties/data/properties/customerInfo/properties/lastname",
+              "type": "string",
+              "title": "The Lastname Schema",
+              "default": "",
+              "examples": [
+                "Wong"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

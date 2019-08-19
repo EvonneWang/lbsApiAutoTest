@@ -1,0 +1,178 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Information collected"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "accountnumber",
+        "stockcode",
+        "stockname",
+        "currencycode",
+        "sharesholdingno",
+        "availableshare",
+        "averageprice",
+        "lastupdatedate",
+        "marketvalue",
+        "investmentAmount",
+        "marketprice",
+        "netGainLoss",
+        "netGainLossPct"
+      ],
+      "properties": {
+        "accountnumber": {
+          "$id": "#/properties/data/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK060001001000000008300"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "stockcode": {
+          "$id": "#/properties/data/properties/stockcode",
+          "type": "string",
+          "title": "The Stockcode Schema",
+          "default": "",
+          "examples": [
+            "00112.HK"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "stockname": {
+          "$id": "#/properties/data/properties/stockname",
+          "type": "string",
+          "title": "The Stockname Schema",
+          "default": "",
+          "examples": [
+            "LERTHAI GROUP"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "currencycode": {
+          "$id": "#/properties/data/properties/currencycode",
+          "type": "string",
+          "title": "The Currencycode Schema",
+          "default": "",
+          "examples": [
+            "HKD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sharesholdingno": {
+          "$id": "#/properties/data/properties/sharesholdingno",
+          "type": "number",
+          "title": "The Sharesholdingno Schema",
+          "default": 0,
+          "examples": [
+            500
+          ]
+        },
+        "availableshare": {
+          "$id": "#/properties/data/properties/availableshare",
+          "type": "number",
+          "title": "The Availableshare Schema",
+          "default": 0,
+          "examples": [
+            500
+          ]
+        },
+        "averageprice": {
+          "$id": "#/properties/data/properties/averageprice",
+          "type": "number",
+          "title": "The Averageprice Schema",
+          "default": 0.0,
+          "examples": [
+            7.18
+          ]
+        },
+        "lastupdatedate": {
+          "$id": "#/properties/data/properties/lastupdatedate",
+          "type": "number",
+          "title": "The Lastupdatedate Schema",
+          "default": 0,
+          "examples": [
+            1562930825922
+          ]
+        },
+        "marketvalue": {
+          "$id": "#/properties/data/properties/marketvalue",
+          "type": "number",
+          "title": "The Marketvalue Schema",
+          "default": 0,
+          "examples": [
+            3580
+          ]
+        },
+        "investmentAmount": {
+          "$id": "#/properties/data/properties/investmentAmount",
+          "type": "number",
+          "title": "The Investmentamount Schema",
+          "default": 0,
+          "examples": [
+            3590
+          ]
+        },
+        "marketprice": {
+          "$id": "#/properties/data/properties/marketprice",
+          "type": "number",
+          "title": "The Marketprice Schema",
+          "default": 0.0,
+          "examples": [
+            7.16
+          ]
+        },
+        "netGainLoss": {
+          "$id": "#/properties/data/properties/netGainLoss",
+          "type": "number",
+          "title": "The Netgainloss Schema",
+          "default": 0,
+          "examples": [
+            -10
+          ]
+        },
+        "netGainLossPct": {
+          "$id": "#/properties/data/properties/netGainLossPct",
+          "type": "string",
+          "title": "The Netgainlosspct Schema",
+          "default": "",
+          "examples": [
+            "-0.28%"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

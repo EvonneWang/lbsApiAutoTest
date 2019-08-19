@@ -1,0 +1,138 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "accountnumber",
+        "contractnumber",
+        "phaseno",
+        "loanamountperphase",
+        "loaninterestperphase",
+        "totalpayment",
+        "currencycode",
+        "repaymentduedate",
+        "repaymentstatus"
+      ],
+      "properties": {
+        "accountnumber": {
+          "$id": "#/properties/data/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK620001001000005086600"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "contractnumber": {
+          "$id": "#/properties/data/properties/contractnumber",
+          "type": "string",
+          "title": "The Contractnumber Schema",
+          "default": "",
+          "examples": [
+            "000000001"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "phaseno": {
+          "$id": "#/properties/data/properties/phaseno",
+          "type": "string",
+          "title": "The Phaseno Schema",
+          "default": "",
+          "examples": [
+            "1"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "loanamountperphase": {
+          "$id": "#/properties/data/properties/loanamountperphase",
+          "type": "number",
+          "title": "The Loanamountperphase Schema",
+          "default": 0.0,
+          "examples": [
+            54.15
+          ]
+        },
+        "loaninterestperphase": {
+          "$id": "#/properties/data/properties/loaninterestperphase",
+          "type": "number",
+          "title": "The Loaninterestperphase Schema",
+          "default": 0.0,
+          "examples": [
+            79.85
+          ]
+        },
+        "totalpayment": {
+          "$id": "#/properties/data/properties/totalpayment",
+          "type": "number",
+          "title": "The Totalpayment Schema",
+          "default": 0,
+          "examples": [
+            134
+          ]
+        },
+        "currencycode": {
+          "$id": "#/properties/data/properties/currencycode",
+          "type": "string",
+          "title": "The Currencycode Schema",
+          "default": "",
+          "examples": [
+            "HKD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "repaymentduedate": {
+          "$id": "#/properties/data/properties/repaymentduedate",
+          "type": "integer",
+          "title": "The Repaymentduedate Schema",
+          "default": 0,
+          "examples": [
+            1563983999999
+          ]
+        },
+        "repaymentstatus": {
+          "$id": "#/properties/data/properties/repaymentstatus",
+          "type": "string",
+          "title": "The Repaymentstatus Schema",
+          "default": "",
+          "examples": [
+            "Pending"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

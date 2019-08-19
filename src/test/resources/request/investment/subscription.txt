@@ -1,0 +1,6 @@
+{
+  "debitaccountnumber": "HK720001001000000001001",
+  "fundaccountnumber": "HK720001001000000007500",
+  "fundcode": "U000001",
+  "tradingamount": 100
+}

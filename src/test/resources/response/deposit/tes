@@ -1,0 +1,210 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "200"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Search Success"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "array",
+        "title": "The Items Schema",
+        "items": {
+          "$id": "#/properties/data/items/items",
+          "type": "object",
+          "title": "The Items Schema",
+          "required": [
+            "accountnumber",
+            "depositnumber",
+            "depositamount",
+            "termperiod",
+            "terminterestrate",
+            "maturitydate",
+            "maturityinterest",
+            "maturityamount",
+            "maturitystatus",
+            "currencycode",
+            "createdate",
+            "systemdate"
+          ],
+          "properties": {
+            "accountnumber": {
+              "$id": "#/properties/data/items/items/properties/accountnumber",
+              "type": "string",
+              "title": "The Accountnumber Schema",
+              "default": "",
+              "examples": [
+                "HK620001001000006299100"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "depositnumber": {
+              "$id": "#/properties/data/items/items/properties/depositnumber",
+              "type": "string",
+              "title": "The Depositnumber Schema",
+              "default": "",
+              "examples": [
+                "000001236"
+              ],
+              "pattern": "^-?\\d+(\\.\\d+)?$"
+            },
+            "depositamount": {
+              "$id": "#/properties/data/items/items/properties/depositamount",
+              "type": "string",
+              "title": "The Depositamount Schema",
+              "pattern": "^(((^[0-9]+))$)|^(([0-9]+)\\.([0-9]\\d{0,1})$)"
+          },
+            "termperiod": {
+              "$id": "#/properties/data/items/items/properties/termperiod",
+              "type": "string",
+              "title": "The Termperiod Schema",
+              "default": "",
+              "examples": [
+                "1month"
+              ],
+              "pattern": "^\\d$month"
+            },
+            "terminterestrate": {
+              "$id": "#/properties/data/items/items/properties/terminterestrate",
+              "type": "string",
+              "title": "The Terminterestrate Schema",
+              "default": 0.0,
+              "pattern": "^(((,[^0][0-9]+|0)\\.([0-9]\\d{0,3}))$)|^(([1-9]+)\\.([0-9]\\d{0,3})$)"
+            },
+            "maturitydate": {
+              "$id": "#/properties/data/items/items/properties/maturitydate",
+              "type": "string",
+              "title": "The Maturitydate Schema",
+              "default": "",
+              "examples": [
+                "20190718"
+              ],
+              "pattern": "([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8])))"
+            },
+            "maturityinterest": {
+              "$id": "#/properties/data/items/items/properties/maturityinterest",
+              "type": {
+                "enum": [
+                  "null",
+                  "number"
+                ]
+              },
+              "title": "The Maturityinterest Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "maturityamount": {
+              "$id": "#/properties/data/items/items/properties/maturityamount",
+              "type": {
+                "enum": [
+                  "null",
+                  "number"
+                ]
+              },
+              "title": "The Maturityamount Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "maturitystatus": {
+              "$id": "#/properties/data/items/items/properties/maturitystatus",
+              "type": "string",
+              "title": "The Maturitystatus Schema",
+              "default": "",
+              "examples": [
+                "A"
+              ],
+              "pattern": "^(.*)$",
+              "enum": [
+                "A",
+                "D"
+              ]
+            },
+            "currencycode": {
+              "$id": "#/properties/data/items/items/properties/currencycode",
+              "type": "string",
+              "title": "The Currencycode Schema",
+              "default": "",
+              "enum": [
+                "HKD",
+                "CNY",
+                "USD",
+                "AUD",
+                "EUR",
+                "CHF",
+                "CAD",
+                "GBP",
+                "JPY",
+                "NZD",
+                "SGD"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "createdate": {
+              "$id": "#/properties/data/items/items/properties/createdate",
+              "type": {
+                "enum": [
+                  "null",
+                  "String"
+                ]
+              },
+              "title": "The Createdate Schema",
+              "default": "",
+              "examples": [
+                "1559819099000"
+              ],
+              "pattern": "data"
+            },
+            "systemdate": {
+              "$id": "#/properties/data/items/items/properties/systemdate",
+              "type": {
+                "enum": [
+                  "null",
+                  "String"
+                ]
+              },
+              "title": "The Systemdate Schema",
+              "default": "",
+              "examples": [
+                "null"
+              ],
+              "pattern": "data"
+            }
+          }
+        }
+      }
+    }
+  }
+}

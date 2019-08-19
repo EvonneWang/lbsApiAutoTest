@@ -1,0 +1,7 @@
+{
+  "creditcardnumber": 5000010000000024,
+  "merchantnumber": "HK0001001000009",
+  "transactionamount": 100,
+  "transactionccy": "USD",
+  "transactiontime": 1561540143000
+}

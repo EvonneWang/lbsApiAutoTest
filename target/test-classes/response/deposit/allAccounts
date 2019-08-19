@@ -1,0 +1,416 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "enum": [
+        "200"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "enum": [
+        "Search Success"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "customerNumber",
+        "customerName",
+        "saving",
+        "current",
+        "termDeposit",
+        "fex",
+        "stock",
+        "mutualFund",
+        "preciousMetal",
+        "creditCard",
+        "loan"
+      ],
+      "properties": {
+        "customerNumber": {
+          "$id": "#/properties/data/properties/customerNumber",
+          "type": "string",
+          "title": "The Customernumber Schema",
+          "default": "",
+          "examples": [
+            "001000000001"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "customerName": {
+          "$id": "#/properties/data/properties/customerName",
+          "type": "string",
+          "title": "The Customername Schema",
+          "default": "",
+          "examples": [
+            "Wong,Yan"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "saving": {
+          "$id": "#/properties/data/properties/saving",
+          "type": "array",
+          "title": "The Saving Schema",
+          "items": {
+            "$id": "#/properties/data/properties/saving/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/saving/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK440001001000006381001"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/saving/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "current": {
+          "$id": "#/properties/data/properties/current",
+          "type": "array",
+          "title": "The Current Schema",
+          "items": {
+            "$id": "#/properties/data/properties/current/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/current/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK130001001000066892002"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/current/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "termDeposit": {
+          "$id": "#/properties/data/properties/termDeposit",
+          "type": "array",
+          "title": "The Termdeposit Schema",
+          "items": {
+            "$id": "#/properties/data/properties/termDeposit/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/termDeposit/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK620001001000006299100"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/termDeposit/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "fex": {
+          "$id": "#/properties/data/properties/fex",
+          "type": "array",
+          "title": "The Fex Schema",
+          "items": {
+            "$id": "#/properties/data/properties/fex/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/fex/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK320001001000000012003"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/fex/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "stock": {
+          "$id": "#/properties/data/properties/stock",
+          "type": "array",
+          "title": "The Stock Schema",
+          "items": {
+            "$id": "#/properties/data/properties/stock/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/stock/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK530001001000066968300"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/stock/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "mutualFund": {
+          "$id": "#/properties/data/properties/mutualFund",
+          "type": "array",
+          "title": "The Mutualfund Schema",
+          "items": {
+            "$id": "#/properties/data/properties/mutualFund/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/mutualFund/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK940001001000066885500"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/mutualFund/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "preciousMetal": {
+          "$id": "#/properties/data/properties/preciousMetal",
+          "type": "array",
+          "title": "The Preciousmetal Schema",
+          "items": {
+            "$id": "#/properties/data/properties/preciousMetal/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/preciousMetal/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK610001001000000004400"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/preciousMetal/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "creditCard": {
+          "$id": "#/properties/data/properties/creditCard",
+          "type": "array",
+          "title": "The Creditcard Schema",
+          "items": {
+            "$id": "#/properties/data/properties/creditCard/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/creditCard/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "5000010000004950"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/creditCard/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "loan": {
+          "$id": "#/properties/data/properties/loan",
+          "type": "array",
+          "title": "The Loan Schema",
+          "items": {
+            "$id": "#/properties/data/properties/loan/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "accountNumber",
+              "accountStatus"
+            ],
+            "properties": {
+              "accountNumber": {
+                "$id": "#/properties/data/properties/loan/items/properties/accountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema",
+                "default": "",
+                "examples": [
+                  "HK660001001000066989600"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "accountStatus": {
+                "$id": "#/properties/data/properties/loan/items/properties/accountStatus",
+                "type": "string",
+                "title": "The Accountstatus Schema",
+                "default": "",
+                "enum": [
+                  "A",
+                  "L",
+                  "C"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

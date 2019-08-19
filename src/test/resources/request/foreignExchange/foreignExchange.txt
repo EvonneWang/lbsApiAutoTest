@@ -1,0 +1,7 @@
+{
+  "actionCode": "Buy",
+  "ccycode": "USD",
+  "debitaccountnumber": "HK720001001000000001001",
+  "exchangeAmount": 10,
+  "fexAccountNumber": "HK470001001000000003003"
+}

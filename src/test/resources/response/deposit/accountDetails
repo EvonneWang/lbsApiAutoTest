@@ -1,0 +1,461 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Search Success!"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "customer",
+        "account"
+      ],
+      "properties": {
+        "customer": {
+          "$id": "#/properties/data/properties/customer",
+          "type": "object",
+          "title": "The Customer Schema",
+          "required": [
+            "customernumber",
+            "customerName",
+            "mobilephonenumber",
+            "customerid",
+            "issuecountry",
+            "dateofbirth",
+            "chinesename",
+            "gender",
+            "nationality",
+            "permanentresidencestatus",
+            "maritalstatus",
+            "education",
+            "residentialaddress",
+            "mailingaddress",
+            "residencephonenumber",
+            "wechatid",
+            "accommodation",
+            "yearsofresidence",
+            "occupation",
+            "employercompanyname",
+            "position",
+            "companyaddress",
+            "companyphonenumber",
+            "yearsofservices",
+            "monthlysalary",
+            "emailaddress"
+          ],
+          "properties": {
+            "customernumber": {
+              "$id": "#/properties/data/properties/customer/properties/customernumber",
+              "type": "string",
+              "title": "The Customernumber Schema",
+              "default": "",
+              "examples": [
+                "001000000001"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "customerName": {
+              "$id": "#/properties/data/properties/customer/properties/customerName",
+              "type": "string",
+              "title": "The Customername Schema",
+              "default": "",
+              "examples": [
+                "Wong,Yan"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "mobilephonenumber": {
+              "$id": "#/properties/data/properties/customer/properties/mobilephonenumber",
+              "type": "string",
+              "title": "The Mobilephonenumber Schema",
+              "default": "",
+              "examples": [
+                "64657884"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "customerid": {
+              "$id": "#/properties/data/properties/customer/properties/customerid",
+              "type": "string",
+              "title": "The Customerid Schema",
+              "default": "",
+              "examples": [
+                "U735535(9)"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "issuecountry": {
+              "$id": "#/properties/data/properties/customer/properties/issuecountry",
+              "type": "string",
+              "title": "The Issuecountry Schema",
+              "default": "",
+              "examples": [
+                "China"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "dateofbirth": {
+              "$id": "#/properties/data/properties/customer/properties/dateofbirth",
+              "type": "string",
+              "title": "The Dateofbirth Schema",
+              "default": "",
+              "examples": [
+                "178163911000"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "chinesename": {
+              "$id": "#/properties/data/properties/customer/properties/chinesename",
+              "type": "string",
+              "title": "The Chinesename Schema",
+              "default": "",
+              "examples": [
+                "王研"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "gender": {
+              "$id": "#/properties/data/properties/customer/properties/gender",
+              "type": "string",
+              "title": "The Gender Schema",
+              "default": "",
+              "examples": [
+                "Male"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "nationality": {
+              "$id": "#/properties/data/properties/customer/properties/nationality",
+              "type": "string",
+              "title": "The Nationality Schema",
+              "default": "",
+              "examples": [
+                "China"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "permanentresidencestatus": {
+              "$id": "#/properties/data/properties/customer/properties/permanentresidencestatus",
+              "type": "string",
+              "title": "The Permanentresidencestatus Schema",
+              "default": "",
+              "examples": [
+                "Yes"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "maritalstatus": {
+              "$id": "#/properties/data/properties/customer/properties/maritalstatus",
+              "type": "string",
+              "title": "The Maritalstatus Schema",
+              "default": "",
+              "examples": [
+                "Single"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "education": {
+              "$id": "#/properties/data/properties/customer/properties/education",
+              "type": "string",
+              "title": "The Education Schema",
+              "default": "",
+              "examples": [
+                "University"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "residentialaddress": {
+              "$id": "#/properties/data/properties/customer/properties/residentialaddress",
+              "type": "string",
+              "title": "The Residentialaddress Schema",
+              "default": "",
+              "examples": [
+                "779 Yi Chun Street, Sai Kung, New Territory"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "mailingaddress": {
+              "$id": "#/properties/data/properties/customer/properties/mailingaddress",
+              "type": "string",
+              "title": "The Mailingaddress Schema",
+              "default": "",
+              "examples": [
+                "551 Austin Road,Tsim Sha Tsui,Kowloon"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "residencephonenumber": {
+              "$id": "#/properties/data/properties/customer/properties/residencephonenumber",
+              "type": "string",
+              "title": "The Residencephonenumber Schema",
+              "default": "",
+              "examples": [
+                "34828869"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "wechatid": {
+              "$id": "#/properties/data/properties/customer/properties/wechatid",
+              "type": "string",
+              "title": "The Wechatid Schema",
+              "default": "",
+              "examples": [
+                "W3456754"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "accommodation": {
+              "$id": "#/properties/data/properties/customer/properties/accommodation",
+              "type": "string",
+              "title": "The Accommodation Schema",
+              "default": "",
+              "examples": [
+                "Self Owned"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "yearsofresidence": {
+              "$id": "#/properties/data/properties/customer/properties/yearsofresidence",
+              "type": "integer",
+              "title": "The Yearsofresidence Schema",
+              "default": 0,
+              "examples": [
+                3
+              ]
+            },
+            "occupation": {
+              "$id": "#/properties/data/properties/customer/properties/occupation",
+              "type": "string",
+              "title": "The Occupation Schema",
+              "default": "",
+              "examples": [
+                "Software"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "employercompanyname": {
+              "$id": "#/properties/data/properties/customer/properties/employercompanyname",
+              "type": "string",
+              "title": "The Employercompanyname Schema",
+              "default": "",
+              "examples": [
+                "Happy Realty"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "position": {
+              "$id": "#/properties/data/properties/customer/properties/position",
+              "type": "string",
+              "title": "The Position Schema",
+              "default": "",
+              "examples": [
+                "Senior Manager"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "companyaddress": {
+              "$id": "#/properties/data/properties/customer/properties/companyaddress",
+              "type": "string",
+              "title": "The Companyaddress Schema",
+              "default": "",
+              "examples": [
+                "228 Pok Fu Lam Road,Aberdeen,Hong Kong"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "companyphonenumber": {
+              "$id": "#/properties/data/properties/customer/properties/companyphonenumber",
+              "type": "string",
+              "title": "The Companyphonenumber Schema",
+              "default": "",
+              "examples": [
+                "24827781"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "yearsofservices": {
+              "$id": "#/properties/data/properties/customer/properties/yearsofservices",
+              "type": "integer",
+              "title": "The Yearsofservices Schema",
+              "default": 0,
+              "examples": [
+                2
+              ]
+            },
+            "monthlysalary": {
+              "$id": "#/properties/data/properties/customer/properties/monthlysalary",
+              "type": "string",
+              "title": "The Monthlysalary Schema",
+              "default": "",
+              "examples": [
+                "19000"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "emailaddress": {
+              "$id": "#/properties/data/properties/customer/properties/emailaddress",
+              "type": "string",
+              "title": "The Emailaddress Schema",
+              "default": "",
+              "examples": [
+                "happyday@hotmail.com"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "account": {
+          "$id": "#/properties/data/properties/account",
+          "type": "object",
+          "title": "The Account Schema",
+          "required": [
+            "accountnumber",
+            "accountstatus",
+            "currencycode",
+            "availablebalance",
+            "ledgerbalance",
+            "holdingbalance",
+            "fexbalance",
+            "lastupdateddate",
+            "chequebooktype",
+            "chequebooksize",
+            "relaccountnumber"
+          ],
+          "properties": {
+            "accountnumber": {
+              "$id": "#/properties/data/properties/account/properties/accountnumber",
+              "type": "string",
+              "title": "The Accountnumber Schema",
+              "default": "",
+              "examples": [
+                "HK720001001000000001001"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "accountstatus": {
+              "$id": "#/properties/data/properties/account/properties/accountstatus",
+              "type": "string",
+              "title": "The Accountstatus Schema",
+              "default": "",
+              "examples": [
+                "A"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "currencycode": {
+              "$id": "#/properties/data/properties/account/properties/currencycode",
+              "type": "string",
+              "title": "The Currencycode Schema",
+              "default": "",
+              "examples": [
+                "HKD"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "availablebalance": {
+              "$id": "#/properties/data/properties/account/properties/availablebalance",
+              "type": "number",
+              "title": "The Availablebalance Schema",
+              "default": 0.0,
+              "examples": [
+                119449.92
+              ]
+            },
+            "ledgerbalance": {
+              "$id": "#/properties/data/properties/account/properties/ledgerbalance",
+              "type": "number",
+              "title": "The Ledgerbalance Schema",
+              "default": 0.0,
+              "examples": [
+                171845.51
+              ]
+            },
+            "holdingbalance": {
+              "$id": "#/properties/data/properties/account/properties/holdingbalance",
+              "type": "number",
+              "title": "The Holdingbalance Schema",
+              "default": 0.0,
+              "examples": [
+                49091.99
+              ]
+            },
+            "fexbalance": {
+              "$id": "#/properties/data/properties/account/properties/fexbalance",
+              "type": "null",
+              "title": "The Fexbalance Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "lastupdateddate": {
+              "$id": "#/properties/data/properties/account/properties/lastupdateddate",
+              "type": "string",
+              "title": "The Lastupdateddate Schema",
+              "default": "",
+              "examples": [
+                "1565593868345"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "chequebooktype": {
+              "$id": "#/properties/data/properties/account/properties/chequebooktype",
+              "type": "null",
+              "title": "The Chequebooktype Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "chequebooksize": {
+              "$id": "#/properties/data/properties/account/properties/chequebooksize",
+              "type": "null",
+              "title": "The Chequebooksize Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "relaccountnumber": {
+              "$id": "#/properties/data/properties/account/properties/relaccountnumber",
+              "type": "null",
+              "title": "The Relaccountnumber Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "msg",
+    "code"
+  ],
+  "properties": {
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "transaction accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "code": {
+      "$id": "#/properties/code",
+      "type": "integer",
+      "title": "The Code Schema",
+      "default": 0,
+      "pattern": "\\d",
+      "examples": [
+        0
+      ]
+    }
+  }
+}

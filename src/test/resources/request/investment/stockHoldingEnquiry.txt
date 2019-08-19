@@ -1,0 +1,4 @@
+{
+  "stkaccountnumber": "HK060001001000000008300",
+  "stockcode": "00112.HK"
+}

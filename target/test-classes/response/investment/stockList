@@ -1,0 +1,243 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "id",
+          "stockcode",
+          "stockname",
+          "open",
+          "high",
+          "low",
+          "previousclose",
+          "lastprice",
+          "changed",
+          "changedpercent",
+          "buyprice",
+          "sellprice",
+          "volume",
+          "turnover",
+          "eps",
+          "ratio",
+          "lotsize",
+          "tradingpoint",
+          "lasttradingday"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/data/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "1"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "stockcode": {
+            "$id": "#/properties/data/items/properties/stockcode",
+            "type": "string",
+            "title": "The Stockcode Schema",
+            "default": "",
+            "examples": [
+              "00001.HK"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "stockname": {
+            "$id": "#/properties/data/items/properties/stockname",
+            "type": "string",
+            "title": "The Stockname Schema",
+            "default": "",
+            "examples": [
+              "CKH HOLDINGS"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "open": {
+            "$id": "#/properties/data/items/properties/open",
+            "type": "number",
+            "title": "The Open Schema",
+            "default": 0,
+            "examples": [
+              76
+            ]
+          },
+          "high": {
+            "$id": "#/properties/data/items/properties/high",
+            "type": "number",
+            "title": "The High Schema",
+            "default": 0.0,
+            "examples": [
+              76.8
+            ]
+          },
+          "low": {
+            "$id": "#/properties/data/items/properties/low",
+            "type": "number",
+            "title": "The Low Schema",
+            "default": 0.0,
+            "examples": [
+              75.95
+            ]
+          },
+          "previousclose": {
+            "$id": "#/properties/data/items/properties/previousclose",
+            "type": "number",
+            "title": "The Previousclose Schema",
+            "default": 0.0,
+            "examples": [
+              75.8
+            ]
+          },
+          "lastprice": {
+            "$id": "#/properties/data/items/properties/lastprice",
+            "type": "number",
+            "title": "The Lastprice Schema",
+            "default": 0.0,
+            "examples": [
+              76.25
+            ]
+          },
+          "changed": {
+            "$id": "#/properties/data/items/properties/changed",
+            "type": "string",
+            "title": "The Changed Schema",
+            "default": "",
+            "examples": [
+              "0.45"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "changedpercent": {
+            "$id": "#/properties/data/items/properties/changedpercent",
+            "type": "string",
+            "title": "The Changedpercent Schema",
+            "default": "",
+            "examples": [
+              "0.5937%"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "buyprice": {
+            "$id": "#/properties/data/items/properties/buyprice",
+            "type": "number",
+            "title": "The Buyprice Schema",
+            "default": 0.0,
+            "examples": [
+              76.23
+            ]
+          },
+          "sellprice": {
+            "$id": "#/properties/data/items/properties/sellprice",
+            "type": "number",
+            "title": "The Sellprice Schema",
+            "default": 0.0,
+            "examples": [
+              76.27
+            ]
+          },
+          "volume": {
+            "$id": "#/properties/data/items/properties/volume",
+            "type": "number",
+            "title": "The Volume Schema",
+            "default": 0,
+            "examples": [
+              2297964
+            ]
+          },
+          "turnover": {
+            "$id": "#/properties/data/items/properties/turnover",
+            "type": "null",
+            "title": "The Turnover Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "eps": {
+            "$id": "#/properties/data/items/properties/eps",
+            "type": "number",
+            "title": "The Eps Schema",
+            "default": 0.0,
+            "examples": [
+              10.11
+            ]
+          },
+          "ratio": {
+            "$id": "#/properties/data/items/properties/ratio",
+            "type": ["null","number"],
+            "title": "The Ratio Schema",
+            "default": 0.0,
+            "examples": [
+              7.55
+            ]
+          },
+          "lotsize": {
+            "$id": "#/properties/data/items/properties/lotsize",
+            "type": "number",
+            "title": "The Lotsize Schema",
+            "default": 0,
+            "examples": [
+              100
+            ]
+          },
+          "tradingpoint": {
+            "$id": "#/properties/data/items/properties/tradingpoint",
+            "type": "number",
+            "title": "The Tradingpoint Schema",
+            "default": 0.0,
+            "examples": [
+              0.1
+            ]
+          },
+          "lasttradingday": {
+            "$id": "#/properties/data/items/properties/lasttradingday",
+            "type": "number",
+            "title": "The Lasttradingday Schema",
+            "default": 0,
+            "examples": [
+              1562830199999
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "item",
+      "value"
+    ],
+    "properties": {
+      "item": {
+        "$id": "#/items/properties/item",
+        "type": "string",
+        "title": "The Item Schema",
+        "default": "",
+        "examples": [
+          "BranchNumber"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "value": {
+        "$id": "#/items/properties/value",
+        "type": "string",
+        "title": "The Value Schema",
+        "default": "",
+        "examples": [
+          "278"
+        ],
+        "pattern": "\\d"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "customerID": "U735535(9)",
+  "emailaddress": "happyday@hotmail.com",
+  "mailingAddress": "551 Austin Road,Tsim Sha Tsui,Kowloon",
+  "mobilePhoneNumber": 64657884,
+  "residencephonenumber": 34828869,
+  "residentialaddress": "779 Yi Chun Street, Sai Kung, New Territory"
+}

@@ -1,0 +1,65 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "enum": [
+        "Created"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "customerID",
+        "customernumber"
+      ],
+      "properties": {
+        "customerID": {
+          "$id": "#/properties/data/properties/customerID",
+          "type": "string",
+          "title": "The Customerid Schema",
+          "default": "",
+          "examples": [
+            "U735535(7)"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "customernumber": {
+          "$id": "#/properties/data/properties/customernumber",
+          "type": "string",
+          "title": "The Customernumber Schema",
+          "default": "",
+          "examples": [
+            "001000003293"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

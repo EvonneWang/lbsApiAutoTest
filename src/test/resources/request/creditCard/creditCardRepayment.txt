@@ -1,0 +1,5 @@
+{
+  "creditcardnumber": 5000010000000024,
+  "debitaccountnumber": "HK720001001000000001001",
+  "repaymentAmount": 1000
+}

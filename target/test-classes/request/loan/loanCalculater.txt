@@ -1,0 +1,4 @@
+{
+  "loanPeriod": 5,
+  "monthlysalary": 10000
+}

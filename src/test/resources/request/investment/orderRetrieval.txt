@@ -1,0 +1,6 @@
+{
+  "fromdate": 1562630400000,
+  "stkaccountnumber": "HK060001001000000008300",
+  "stockcode": "00112.HK",
+  "todate": 1597463020000
+}

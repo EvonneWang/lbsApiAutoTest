@@ -1,0 +1,195 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "maxLoanAmount",
+        "repaymentByMonth",
+        "repaymentByFortnight"
+      ],
+      "properties": {
+        "maxLoanAmount": {
+          "$id": "#/properties/data/properties/maxLoanAmount",
+          "type": "number",
+          "title": "The Maxloanamount Schema",
+          "default": 0,
+          "examples": [
+            167100
+          ]
+        },
+        "repaymentByMonth": {
+          "$id": "#/properties/data/properties/repaymentByMonth",
+          "type": "object",
+          "title": "The Repaymentbymonth Schema",
+          "required": [
+            "repaymentCycle",
+            "repaymentPerPhase",
+            "loanPeriod",
+            "totalPhase",
+            "totalInterestPayable",
+            "totalRepaymentAmount"
+          ],
+          "properties": {
+            "repaymentCycle": {
+              "$id": "#/properties/data/properties/repaymentByMonth/properties/repaymentCycle",
+              "type": "string",
+              "title": "The Repaymentcycle Schema",
+              "default": "",
+              "examples": [
+                "M"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "repaymentPerPhase": {
+              "$id": "#/properties/data/properties/repaymentByMonth/properties/repaymentPerPhase",
+              "type": "number",
+              "title": "The Repaymentperphase Schema",
+              "default": 0,
+              "examples": [
+                4498
+              ]
+            },
+            "loanPeriod": {
+              "$id": "#/properties/data/properties/repaymentByMonth/properties/loanPeriod",
+              "type": "number",
+              "title": "The Loanperiod Schema",
+              "default": 0,
+              "examples": [
+                5
+              ]
+            },
+            "totalPhase": {
+              "$id": "#/properties/data/properties/repaymentByMonth/properties/totalPhase",
+              "type": "number",
+              "title": "The Totalphase Schema",
+              "default": 0,
+              "examples": [
+                60
+              ]
+            },
+            "totalInterestPayable": {
+              "$id": "#/properties/data/properties/repaymentByMonth/properties/totalInterestPayable",
+              "type": "number",
+              "title": "The Totalinterestpayable Schema",
+              "default": 0,
+              "examples": [
+                102780
+              ]
+            },
+            "totalRepaymentAmount": {
+              "$id": "#/properties/data/properties/repaymentByMonth/properties/totalRepaymentAmount",
+              "type": "number",
+              "title": "The Totalrepaymentamount Schema",
+              "default": 0,
+              "examples": [
+                269880
+              ]
+            }
+          }
+        },
+        "repaymentByFortnight": {
+          "$id": "#/properties/data/properties/repaymentByFortnight",
+          "type": "object",
+          "title": "The Repaymentbyfortnight Schema",
+          "required": [
+            "repaymentCycle",
+            "repaymentPerPhase",
+            "loanPeriod",
+            "totalPhase",
+            "totalInterestPayable",
+            "totalRepaymentAmount"
+          ],
+          "properties": {
+            "repaymentCycle": {
+              "$id": "#/properties/data/properties/repaymentByFortnight/properties/repaymentCycle",
+              "type": "string",
+              "title": "The Repaymentcycle Schema",
+              "default": "",
+              "examples": [
+                "B"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "repaymentPerPhase": {
+              "$id": "#/properties/data/properties/repaymentByFortnight/properties/repaymentPerPhase",
+              "type": "number",
+              "title": "The Repaymentperphase Schema",
+              "default": 0,
+              "examples": [
+                2249
+              ]
+            },
+            "loanPeriod": {
+              "$id": "#/properties/data/properties/repaymentByFortnight/properties/loanPeriod",
+              "type": "number",
+              "title": "The Loanperiod Schema",
+              "default": 0.0,
+              "examples": [
+                4.4
+              ]
+            },
+            "totalPhase": {
+              "$id": "#/properties/data/properties/repaymentByFortnight/properties/totalPhase",
+              "type": "number",
+              "title": "The Totalphase Schema",
+              "default": 0,
+              "examples": [
+                113
+              ]
+            },
+            "totalInterestPayable": {
+              "$id": "#/properties/data/properties/repaymentByFortnight/properties/totalInterestPayable",
+              "type": "number",
+              "title": "The Totalinterestpayable Schema",
+              "default": 0,
+              "examples": [
+                87037
+              ]
+            },
+            "totalRepaymentAmount": {
+              "$id": "#/properties/data/properties/repaymentByFortnight/properties/totalRepaymentAmount",
+              "type": "number",
+              "title": "The Totalrepaymentamount Schema",
+              "default": 0,
+              "examples": [
+                254137
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "2001004"
+      ],
+      "pattern": "\\d"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "enum": [
+        "Get SandBox Table Success"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "t_termdeposit_master",
+        "t_customer_master",
+        "t_stocktradingaccount_master",
+        "t_stock_platform_log",
+        "t_mutualfund_platform_log",
+        "t_creditcard_master",
+        "t_savingaccount_master",
+        "t_currentaccount_master",
+        "t_fexaccount_master",
+        "t_creditcard_transaction_detail",
+        "t_mutualfundaccount_master",
+        "t_termdeposit_detail",
+        "t_transaction_log",
+        "t_preciousmetalaccount_master"
+      ],
+      "properties": {
+        "t_termdeposit_master": {
+          "$id": "#/properties/data/properties/t_termdeposit_master",
+          "type": "string",
+          "title": "The T_termdeposit_master Schema",
+          "default": "",
+          "enum": [
+            "TermDeposit Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_customer_master": {
+          "$id": "#/properties/data/properties/t_customer_master",
+          "type": "string",
+          "title": "The T_customer_master Schema",
+          "default": "",
+          "enum": [
+            "Customer Master Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_stocktradingaccount_master": {
+          "$id": "#/properties/data/properties/t_stocktradingaccount_master",
+          "type": "string",
+          "title": "The T_stocktradingaccount_master Schema",
+          "default": "",
+          "enum": [
+            "StockTrading Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_stock_platform_log": {
+          "$id": "#/properties/data/properties/t_stock_platform_log",
+          "type": "string",
+          "title": "The T_stock_platform_log Schema",
+          "default": "",
+          "enum": [
+            "Stock PlatForm Log Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_mutualfund_platform_log": {
+          "$id": "#/properties/data/properties/t_mutualfund_platform_log",
+          "type": "string",
+          "title": "The T_mutualfund_platform_log Schema",
+          "default": "",
+          "enum": [
+            "MutualFund PlatForm Log Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_creditcard_master": {
+          "$id": "#/properties/data/properties/t_creditcard_master",
+          "type": "string",
+          "title": "The T_creditcard_master Schema",
+          "default": "",
+          "enum": [
+            "CreditCard Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_savingaccount_master": {
+          "$id": "#/properties/data/properties/t_savingaccount_master",
+          "type": "string",
+          "title": "The T_savingaccount_master Schema",
+          "default": "",
+          "enum": [
+            "Saving Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_currentaccount_master": {
+          "$id": "#/properties/data/properties/t_currentaccount_master",
+          "type": "string",
+          "title": "The T_currentaccount_master Schema",
+          "default": "",
+          "enum": [
+            "Current Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_fexaccount_master": {
+          "$id": "#/properties/data/properties/t_fexaccount_master",
+          "type": "string",
+          "title": "The T_fexaccount_master Schema",
+          "default": "",
+          "enum": [
+            "Fex Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_creditcard_transaction_detail": {
+          "$id": "#/properties/data/properties/t_creditcard_transaction_detail",
+          "type": "string",
+          "title": "The T_creditcard_transaction_detail Schema",
+          "default": "",
+          "enum": [
+            "CreditCard Transaction Detail Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_mutualfundaccount_master": {
+          "$id": "#/properties/data/properties/t_mutualfundaccount_master",
+          "type": "string",
+          "title": "The T_mutualfundaccount_master Schema",
+          "default": "",
+          "enum": [
+            "MutualFund Account Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_termdeposit_detail": {
+          "$id": "#/properties/data/properties/t_termdeposit_detail",
+          "type": "string",
+          "title": "The T_termdeposit_detail Schema",
+          "default": "",
+          "enum": [
+            "TermDeposit Detail Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_transaction_log": {
+          "$id": "#/properties/data/properties/t_transaction_log",
+          "type": "string",
+          "title": "The T_transaction_log Schema",
+          "default": "",
+          "enum": [
+            "Transaction Log Table"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "t_preciousmetalaccount_master": {
+          "$id": "#/properties/data/properties/t_preciousmetalaccount_master",
+          "type": "string",
+          "title": "The T_preciousmetalaccount_master Schema",
+          "default": "",
+          "enum": [
+            "PreciousMetal Account Table"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

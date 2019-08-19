@@ -1,0 +1,123 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "merchantnumber",
+          "merchantname",
+          "category",
+          "productcode",
+          "productname",
+          "productinventory",
+          "point"
+        ],
+        "properties": {
+          "merchantnumber": {
+            "$id": "#/properties/data/items/properties/merchantnumber",
+            "type": "string",
+            "title": "The Merchantnumber Schema",
+            "default": "",
+            "examples": [
+              "HK0001001000009"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "merchantname": {
+            "$id": "#/properties/data/items/properties/merchantname",
+            "type": "string",
+            "title": "The Merchantname Schema",
+            "default": "",
+            "examples": [
+              "Aiyana"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "category": {
+            "$id": "#/properties/data/items/properties/category",
+            "type": "string",
+            "title": "The Category Schema",
+            "default": "",
+            "examples": [
+              "Clothing"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "productcode": {
+            "$id": "#/properties/data/items/properties/productcode",
+            "type": "string",
+            "title": "The Productcode Schema",
+            "default": "",
+            "examples": [
+              "00001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "productname": {
+            "$id": "#/properties/data/items/properties/productname",
+            "type": "string",
+            "title": "The Productname Schema",
+            "default": "",
+            "examples": [
+              "dress"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "productinventory": {
+            "$id": "#/properties/data/items/properties/productinventory",
+            "type": "integer",
+            "title": "The Productinventory Schema",
+            "default": 0,
+            "examples": [
+              99998078
+            ]
+          },
+          "point": {
+            "$id": "#/properties/data/items/properties/point",
+            "type": "integer",
+            "title": "The Point Schema",
+            "default": 0,
+            "examples": [
+              1000
+            ]
+          }
+        }
+      }
+    }
+  }
+}

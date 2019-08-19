@@ -1,0 +1,80 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "id",
+      "currency",
+      "ccycode",
+      "ccyplaces",
+      "bankbuy",
+      "banksell"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "string",
+        "title": "The Id Schema",
+        "default": "",
+        "examples": [
+          "1"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "currency": {
+        "$id": "#/items/properties/currency",
+        "type": "string",
+        "title": "The Currency Schema",
+        "default": "",
+        "examples": [
+          "US Dollar"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "ccycode": {
+        "$id": "#/items/properties/ccycode",
+        "type": "string",
+        "title": "The Ccycode Schema",
+        "default": "",
+        "examples": [
+          "USD"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "ccyplaces": {
+        "$id": "#/items/properties/ccyplaces",
+        "type": "string",
+        "title": "The Ccyplaces Schema",
+        "default": "",
+        "examples": [
+          "2"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "bankbuy": {
+        "$id": "#/items/properties/bankbuy",
+        "type": "number",
+        "title": "The Bankbuy Schema",
+        "default": 0.0,
+        "examples": [
+          7.818
+        ]
+      },
+      "banksell": {
+        "$id": "#/items/properties/banksell",
+        "type": "number",
+        "title": "The Banksell Schema",
+        "default": 0.0,
+        "examples": [
+          7.848
+        ]
+      }
+    }
+  }
+}

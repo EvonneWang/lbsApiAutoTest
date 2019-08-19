@@ -1,0 +1,250 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "search success"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "merchant",
+        "trandetail"
+      ],
+      "properties": {
+        "merchant": {
+          "$id": "#/properties/data/properties/merchant",
+          "type": "object",
+          "title": "The Merchant Schema",
+          "required": [
+            "merchantnumber",
+            "merchantname",
+            "merchantaddress",
+            "displayname",
+            "phone",
+            "businesslicenseid",
+            "paymentterm",
+            "outstandingbalance",
+            "lastupdateddate"
+          ],
+          "properties": {
+            "merchantnumber": {
+              "$id": "#/properties/data/properties/merchant/properties/merchantnumber",
+              "type": "string",
+              "title": "The Merchantnumber Schema",
+              "default": "",
+              "examples": [
+                "HK0001001000009"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "merchantname": {
+              "$id": "#/properties/data/properties/merchant/properties/merchantname",
+              "type": "string",
+              "title": "The Merchantname Schema",
+              "default": "",
+              "examples": [
+                "Aiyana"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "merchantaddress": {
+              "$id": "#/properties/data/properties/merchant/properties/merchantaddress",
+              "type": "string",
+              "title": "The Merchantaddress Schema",
+              "default": "",
+              "examples": [
+                "49 Wuhu St, Hung Hom"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "displayname": {
+              "$id": "#/properties/data/properties/merchant/properties/displayname",
+              "type": "string",
+              "title": "The Displayname Schema",
+              "default": "",
+              "examples": [
+                "Aiyana"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "phone": {
+              "$id": "#/properties/data/properties/merchant/properties/phone",
+              "type": "string",
+              "title": "The Phone Schema",
+              "default": "",
+              "examples": [
+                "36918220"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "businesslicenseid": {
+              "$id": "#/properties/data/properties/merchant/properties/businesslicenseid",
+              "type": "string",
+              "title": "The Businesslicenseid Schema",
+              "default": "",
+              "examples": [
+                "af34deted"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "paymentterm": {
+              "$id": "#/properties/data/properties/merchant/properties/paymentterm",
+              "type": "string",
+              "title": "The Paymentterm Schema",
+              "default": "",
+              "examples": [
+                "W"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "outstandingbalance": {
+              "$id": "#/properties/data/properties/merchant/properties/outstandingbalance",
+              "type": "number",
+              "title": "The Outstandingbalance Schema",
+              "default": 0.0,
+              "examples": [
+                89767.54
+              ]
+            },
+            "lastupdateddate": {
+              "$id": "#/properties/data/properties/merchant/properties/lastupdateddate",
+              "type": "number",
+              "title": "The Lastupdateddate Schema",
+              "default": 0,
+              "examples": [
+                1561540143000
+              ]
+            }
+          }
+        },
+        "trandetail": {
+          "$id": "#/properties/data/properties/trandetail",
+          "type": "array",
+          "title": "The Trandetail Schema",
+          "items": {
+            "$id": "#/properties/data/properties/trandetail/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "creditcardnumber",
+              "creditcardtype",
+              "dealnumber",
+              "transactiontime",
+              "transactionccy",
+              "transactionamount",
+              "bookingccy",
+              "bookingamount"
+            ],
+            "properties": {
+              "creditcardnumber": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/creditcardnumber",
+                "type": "string",
+                "title": "The Creditcardnumber Schema",
+                "default": "",
+                "examples": [
+                  "5000010000014249"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "creditcardtype": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/creditcardtype",
+                "type": "string",
+                "title": "The Creditcardtype Schema",
+                "default": "",
+                "examples": [
+                  "V"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "dealnumber": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/dealnumber",
+                "type": "string",
+                "title": "The Dealnumber Schema",
+                "default": "",
+                "examples": [
+                  "20190626000002979"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "transactiontime": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/transactiontime",
+                "type": "number",
+                "title": "The Transactiontime Schema",
+                "default": 0,
+                "examples": [
+                  1561604517000
+                ]
+              },
+              "transactionccy": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/transactionccy",
+                "type": "string",
+                "title": "The Transactionccy Schema",
+                "default": "",
+                "examples": [
+                  "USD"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "transactionamount": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/transactionamount",
+                "type": "number",
+                "title": "The Transactionamount Schema",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "bookingccy": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/bookingccy",
+                "type": "string",
+                "title": "The Bookingccy Schema",
+                "default": "",
+                "examples": [
+                  "HKD"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "bookingamount": {
+                "$id": "#/properties/data/properties/trandetail/items/properties/bookingamount",
+                "type": "number",
+                "title": "The Bookingamount Schema",
+                "default": 0.0,
+                "examples": [
+                  7.85
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

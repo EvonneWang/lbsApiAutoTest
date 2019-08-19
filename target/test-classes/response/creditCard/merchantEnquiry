@@ -1,0 +1,140 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "search success"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "merchantnumber",
+        "merchantname",
+        "merchantaddress",
+        "displayname",
+        "phone",
+        "businesslicenseid",
+        "paymentterm",
+        "outstandingbalance",
+        "lastupdateddate"
+      ],
+      "properties": {
+        "merchantnumber": {
+          "$id": "#/properties/data/properties/merchantnumber",
+          "type": "string",
+          "title": "The Merchantnumber Schema",
+          "default": "",
+          "examples": [
+            "HK0001001000009"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "merchantname": {
+          "$id": "#/properties/data/properties/merchantname",
+          "type": "string",
+          "title": "The Merchantname Schema",
+          "default": "",
+          "examples": [
+            "Aiyana"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "merchantaddress": {
+          "$id": "#/properties/data/properties/merchantaddress",
+          "type": "string",
+          "title": "The Merchantaddress Schema",
+          "default": "",
+          "examples": [
+            "49 Wuhu St, Hung Hom"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "displayname": {
+          "$id": "#/properties/data/properties/displayname",
+          "type": "string",
+          "title": "The Displayname Schema",
+          "default": "",
+          "examples": [
+            "Aiyana"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "phone": {
+          "$id": "#/properties/data/properties/phone",
+          "type": "string",
+          "title": "The Phone Schema",
+          "default": "",
+          "examples": [
+            "36918220"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "businesslicenseid": {
+          "$id": "#/properties/data/properties/businesslicenseid",
+          "type": "string",
+          "title": "The Businesslicenseid Schema",
+          "default": "",
+          "examples": [
+            "af34deted"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "paymentterm": {
+          "$id": "#/properties/data/properties/paymentterm",
+          "type": "string",
+          "title": "The Paymentterm Schema",
+          "default": "",
+          "examples": [
+            "W"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "outstandingbalance": {
+          "$id": "#/properties/data/properties/outstandingbalance",
+          "type": "number",
+          "title": "The Outstandingbalance Schema",
+          "default": 0.0,
+          "examples": [
+            89767.54
+          ]
+        },
+        "lastupdateddate": {
+          "$id": "#/properties/data/properties/lastupdateddate",
+          "type": "integer",
+          "title": "The Lastupdateddate Schema",
+          "default": 0,
+          "examples": [
+            1561540143000
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteName" verbose="1" parallel="tests">
+    <test name="TestName">
+        <groups>
+            <run>
+                <include name="all"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="api.CreditCardApiTest"/>
+            <class name="api.DepositApiTest"/>
+            <class name="api.ForeignExchangeApiTest"/>
+            <class name="api.InvestmentApiTest"/>
+            <class name="api.LoanApiTest"/>
+            <class name="api.SysadminApiTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="reporter.listener.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

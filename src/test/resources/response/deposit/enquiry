@@ -1,0 +1,236 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "查询成功"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "transeq",
+          "accountnumber",
+          "trandate",
+          "channel",
+          "channelid",
+          "trantype",
+          "tranamt",
+          "previousbalamt",
+          "actualbalamt",
+          "refaccountnumber",
+          "tfrseqno",
+          "crdrmaintind",
+          "trandesc",
+          "ccy"
+        ],
+        "properties": {
+          "transeq": {
+            "$id": "#/properties/data/items/properties/transeq",
+            "type": "string",
+            "title": "The Transeq Schema",
+            "default": "",
+            "examples": [
+              "201904261722350004API000000003HK0001001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "accountnumber": {
+            "$id": "#/properties/data/items/properties/accountnumber",
+            "type": "string",
+            "title": "The Accountnumber Schema",
+            "default": "",
+            "examples": [
+              "HK720001001000000001001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "trandate": {
+            "$id": "#/properties/data/items/properties/trandate",
+            "type": "integer",
+            "title": "The Trandate Schema",
+            "default": 0,
+            "examples": [
+              1559750400000
+            ],
+            "pattern": "\\d"
+          },
+          "channel": {
+            "$id": "#/properties/data/items/properties/channel",
+            "type": "string",
+            "title": "The Channel Schema",
+            "default": "",
+            "examples": [
+              "API"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "channelid": {
+            "$id": "#/properties/data/items/properties/channelid",
+            "type": "string",
+            "title": "The Channelid Schema",
+            "default": "",
+            "examples": [
+              "5de8b7acf522422c9ed2b740bb1c1775"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "trantype": {
+            "$id": "#/properties/data/items/properties/trantype",
+            "type": "string",
+            "title": "The Trantype Schema",
+            "default": "",
+            "enum": [
+              "0001",
+              "0002",
+              "0003",
+              "0004",
+              "0005",
+              "0006"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "tranamt": {
+            "$id": "#/properties/data/items/properties/tranamt",
+            "type": [
+              "integer",
+              "number"
+            ],
+            "title": "The Tranamt Schema",
+            "default": 0,
+            "examples": [
+              300
+            ]
+          },
+          "previousbalamt": {
+            "$id": "#/properties/data/items/properties/previousbalamt",
+            "type": [
+              "number",
+              "integer"
+            ],
+            "title": "The Previousbalamt Schema",
+            "default": 0,
+            "examples": [
+              99999999999949
+            ]
+          },
+          "actualbalamt": {
+            "$id": "#/properties/data/items/properties/actualbalamt",
+            "type": [
+              "number",
+              "integer"
+            ],
+            "title": "The Actualbalamt Schema",
+            "default": 0,
+            "examples": [
+              100000000000249
+            ]
+          },
+          "refaccountnumber": {
+            "$id": "#/properties/data/items/properties/refaccountnumber",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Refaccountnumber Schema",
+            "default": null,
+            "pattern": "^(.*)$"
+          },
+          "tfrseqno": {
+            "$id": "#/properties/data/items/properties/tfrseqno",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Tfrseqno Schema",
+            "default": null,
+            "pattern": "^(.*)$"
+          },
+          "crdrmaintind": {
+            "$id": "#/properties/data/items/properties/crdrmaintind",
+            "type": "string",
+            "title": "The Crdrmaintind Schema",
+            "default": "",
+            "enum": [
+              "C",
+              "D"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "trandesc": {
+            "$id": "#/properties/data/items/properties/trandesc",
+            "type": "string",
+            "title": "The Trandesc Schema",
+            "default": "",
+            "enum": [
+              "deposit",
+              "fund sell",
+              "foreign sell",
+              "Term Deposit Draw Down",
+              "credit card repayment",
+              "foreign buy",
+              "fund buy",
+              "stock buy",
+              "stock sell",
+              "Term Deposit Application",
+              "transfer in",
+              "transfer out",
+              "withdrawal"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ccy": {
+            "$id": "#/properties/data/items/properties/ccy",
+            "type": "string",
+            "title": "The Ccy Schema",
+            "default": "",
+            "enum": [
+              "HKD",
+              "CNY",
+              "USD",
+              "AUD",
+              "EUR",
+              "CHF",
+              "CAD",
+              "GBP",
+              "JPY",
+              "NZD",
+              "SGD"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

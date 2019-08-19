@@ -1,0 +1,133 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "transDetails",
+    "msg",
+    "code"
+  ],
+  "properties": {
+    "transDetails": {
+      "$id": "#/properties/transDetails",
+      "type": "array",
+      "title": "The Transdetails Schema",
+      "items": {
+        "$id": "#/properties/transDetails/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "dealnumber",
+          "transactiontime",
+          "merchantname",
+          "merchantnumber",
+          "transactionccy",
+          "transactionamount",
+          "bookingccy",
+          "bookingamount"
+        ],
+        "properties": {
+          "dealnumber": {
+            "$id": "#/properties/transDetails/items/properties/dealnumber",
+            "type": "string",
+            "title": "The Dealnumber Schema",
+            "default": "",
+            "examples": [
+              "20190703000003305"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "transactiontime": {
+            "$id": "#/properties/transDetails/items/properties/transactiontime",
+            "type": "number",
+            "title": "The Transactiontime Schema",
+            "default": 0,
+            "examples": [
+              1561540143000
+            ]
+          },
+          "merchantname": {
+            "$id": "#/properties/transDetails/items/properties/merchantname",
+            "type": "string",
+            "title": "The Merchantname Schema",
+            "default": "",
+            "examples": [
+              "Aiyana"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "merchantnumber": {
+            "$id": "#/properties/transDetails/items/properties/merchantnumber",
+            "type": "string",
+            "title": "The Merchantnumber Schema",
+            "default": "",
+            "examples": [
+              "HK0001001000009"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "transactionccy": {
+            "$id": "#/properties/transDetails/items/properties/transactionccy",
+            "type": "string",
+            "title": "The Transactionccy Schema",
+            "default": "",
+            "examples": [
+              "HKD"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "transactionamount": {
+            "$id": "#/properties/transDetails/items/properties/transactionamount",
+            "type": "number",
+            "title": "The Transactionamount Schema",
+            "default": 0,
+            "examples": [
+              100
+            ]
+          },
+          "bookingccy": {
+            "$id": "#/properties/transDetails/items/properties/bookingccy",
+            "type": "string",
+            "title": "The Bookingccy Schema",
+            "default": "",
+            "examples": [
+              "HKD"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "bookingamount": {
+            "$id": "#/properties/transDetails/items/properties/bookingamount",
+            "type": "number",
+            "title": "The Bookingamount Schema",
+            "default": 0,
+            "examples": [
+              100
+            ]
+          }
+        }
+      }
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

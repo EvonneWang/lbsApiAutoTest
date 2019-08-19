@@ -1,0 +1,6 @@
+{
+  "customerNumber": "001032706",
+  "developerID": "5de8b7acf522422c9ed2b740bb1c1775",
+  "loginName": "pim",
+  "loginPwd": "123456a"
+}

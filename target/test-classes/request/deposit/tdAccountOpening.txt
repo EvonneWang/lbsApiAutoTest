@@ -1,0 +1,4 @@
+{
+  "accountnumber": "HK720001001000000001001",
+  "currencycode": "HKD"
+}

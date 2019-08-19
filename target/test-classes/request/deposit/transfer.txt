@@ -1,0 +1,5 @@
+{
+  "transferAmount": 300,
+  "transferInAccountNumber": "HK960001001000000006001",
+  "transferOutAccountNumber": "HK720001001000000001001"
+}

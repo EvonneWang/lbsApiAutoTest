@@ -1,0 +1,6 @@
+{
+  "accountnumber": "HK620001001000005086600",
+  "contractnumber": "000000001",
+  "transFromDate": 1556668800000,
+  "transToDate": 1564552779000
+}

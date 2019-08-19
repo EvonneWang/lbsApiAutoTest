@@ -1,0 +1,4 @@
+{
+  "branchcode": "001",
+  "tablename": "t_customer_master"
+}

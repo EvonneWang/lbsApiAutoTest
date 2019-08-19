@@ -1,0 +1,168 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Information collected"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "id",
+        "accountnumber",
+        "fundcode",
+        "currencycode",
+        "sharesholdingno",
+        "averageprice",
+        "lastupdatedate",
+        "marketprice",
+        "marketvalue",
+        "investmentamount",
+        "netGainLoss",
+        "netGainLossPct"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#/properties/data/properties/id",
+          "type": "string",
+          "title": "The Id Schema",
+          "default": "",
+          "examples": [
+            "22459afc4ae043b2aa4d87f8b1b74a41"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "accountnumber": {
+          "$id": "#/properties/data/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK720001001000000007500"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "fundcode": {
+          "$id": "#/properties/data/properties/fundcode",
+          "type": "string",
+          "title": "The Fundcode Schema",
+          "default": "",
+          "examples": [
+            "U000001"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "currencycode": {
+          "$id": "#/properties/data/properties/currencycode",
+          "type": "string",
+          "title": "The Currencycode Schema",
+          "default": "",
+          "examples": [
+            "USD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sharesholdingno": {
+          "$id": "#/properties/data/properties/sharesholdingno",
+          "type": "number",
+          "title": "The Sharesholdingno Schema",
+          "default": 0.0,
+          "examples": [
+            6.93
+          ]
+        },
+        "averageprice": {
+          "$id": "#/properties/data/properties/averageprice",
+          "type": "number",
+          "title": "The Averageprice Schema",
+          "default": 0.0,
+          "examples": [
+            82.3588
+          ]
+        },
+        "lastupdatedate": {
+          "$id": "#/properties/data/properties/lastupdatedate",
+          "type": "integer",
+          "title": "The Lastupdatedate Schema",
+          "default": 0,
+          "examples": [
+            1559750400000
+          ]
+        },
+        "marketprice": {
+          "$id": "#/properties/data/properties/marketprice",
+          "type": "number",
+          "title": "The Marketprice Schema",
+          "default": 0.0,
+          "examples": [
+            81.95
+          ]
+        },
+        "marketvalue": {
+          "$id": "#/properties/data/properties/marketvalue",
+          "type": "number",
+          "title": "The Marketvalue Schema",
+          "default": 0.0,
+          "examples": [
+            567.91
+          ]
+        },
+        "investmentamount": {
+          "$id": "#/properties/data/properties/investmentamount",
+          "type": "number",
+          "title": "The Investmentamount Schema",
+          "default": 0.0,
+          "examples": [
+            570.75
+          ]
+        },
+        "netGainLoss": {
+          "$id": "#/properties/data/properties/netGainLoss",
+          "type": "number",
+          "title": "The Netgainloss Schema",
+          "default": 0.0,
+          "examples": [
+            -2.84
+          ]
+        },
+        "netGainLossPct": {
+          "$id": "#/properties/data/properties/netGainLossPct",
+          "type": "string",
+          "title": "The Netgainlosspct Schema",
+          "default": "",
+          "examples": [
+            "-0.50%"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

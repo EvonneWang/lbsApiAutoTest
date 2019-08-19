@@ -1,0 +1,187 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Search Success"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "accountnumber",
+        "depositnumber",
+        "depositamount",
+        "termperiod",
+        "terminterestrate",
+        "maturitydate",
+        "maturityinterest",
+        "maturityamount",
+        "maturitystatus",
+        "currencycode",
+        "createdate",
+        "systemdate"
+      ],
+      "properties": {
+        "accountnumber": {
+          "$id": "#/properties/data/items/items/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK620001001000006299100"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "depositnumber": {
+          "$id": "#/properties/data/items/items/properties/depositnumber",
+          "type": "string",
+          "title": "The Depositnumber Schema",
+          "default": "",
+          "examples": [
+            "000001236"
+          ],
+          "pattern": "^-?\\d+(\\.\\d+)?$"
+        },
+        "depositamount": {
+          "$id": "#/properties/data/items/items/properties/depositamount",
+          "type": "number",
+          "title": "The Depositamount Schema",
+          "default": 0,
+          "examples": [
+            20000
+          ],
+          "pattern": "^(((^[0-9]+))$)|^(([0-9]+)\\.([0-9]\\d{0,1})$)"
+        },
+        "termperiod": {
+          "$id": "#/properties/data/items/items/properties/termperiod",
+          "type": "string",
+          "title": "The Termperiod Schema",
+          "default": "",
+          "examples": [
+            "1month"
+          ],
+          "pattern": "^\\dmonth"
+        },
+        "terminterestrate": {
+          "$id": "#/properties/data/items/items/properties/terminterestrate",
+          "type": "number",
+          "title": "The Terminterestrate Schema",
+          "default": 0.0,
+          "examples": [
+            0.002
+          ],
+          "pattern": "^(((,[^0][0-9]+|0)\\.([0-9]\\d{0,3}))$)|^(([1-9]+)\\.([0-9]\\d{0,3})$)"
+        },
+        "maturitydate": {
+          "$id": "#/properties/data/items/items/properties/maturitydate",
+          "type": "string",
+          "title": "The Maturitydate Schema",
+          "default": "",
+          "examples": [
+            "20190718"
+          ],
+          "pattern": "\\d"
+        },
+        "maturityinterest": {
+          "$id": "#/properties/data/items/items/properties/maturityinterest",
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "The Maturityinterest Schema",
+          "default": null
+        },
+        "maturityamount": {
+          "$id": "#/properties/data/items/items/properties/maturityamount",
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "The Maturityamount Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "maturitystatus": {
+          "$id": "#/properties/data/items/items/properties/maturitystatus",
+          "type": "string",
+          "title": "The Maturitystatus Schema",
+          "default": "",
+          "enum": [
+            "A",
+            "D"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "currencycode": {
+          "$id": "#/properties/data/items/items/properties/currencycode",
+          "type": "string",
+          "title": "The Currencycode Schema",
+          "default": "",
+          "enum": [
+            "HKD",
+            "CNY",
+            "USD",
+            "AUD",
+            "EUR",
+            "CHF",
+            "CAD",
+            "GBP",
+            "JPY",
+            "NZD",
+            "SGD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "createdate": {
+          "$id": "#/properties/data/items/items/properties/createdate",
+          "type": "string",
+          "title": "The Createdate Schema",
+          "default": "",
+          "examples": [
+            "1559819099000"
+          ],
+          "pattern": "(\\d)|null"
+        },
+        "systemdate": {
+          "$id": "#/properties/data/items/items/properties/systemdate",
+          "type": "string",
+          "title": "The Systemdate Schema",
+          "default": "",
+          "examples": [
+            "null"
+          ],
+          "pattern": "(\\d)|null"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "list"
+  ],
+  "properties": {
+    "list": {
+      "$id": "#/properties/list",
+      "type": "array",
+      "title": "The List Schema",
+      "items": {
+        "$id": "#/properties/list/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "LastUpdatedDate",
+          "SandBoxId",
+          "RelAccountNumber",
+          "CreateDate",
+          "AccountNumber",
+          "CurrencyCode",
+          "AccountStatus",
+          "ClearingCode",
+          "CustomerNumber",
+          "ID",
+          "CountryCode",
+          "DockerId",
+          "BranchCode"
+        ],
+        "properties": {
+          "LastUpdatedDate": {
+            "$id": "#/properties/list/items/properties/LastUpdatedDate",
+            "type": "integer",
+            "title": "The Lastupdateddate Schema",
+            "default": 0,
+            "examples": [
+              20190410022558
+            ]
+          },
+          "SandBoxId": {
+            "$id": "#/properties/list/items/properties/SandBoxId",
+            "type": "string",
+            "title": "The Sandboxid Schema",
+            "default": "",
+            "examples": [
+              "e880c37dd4d14cf6b474e7e039554fe0"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "RelAccountNumber": {
+            "$id": "#/properties/list/items/properties/RelAccountNumber",
+            "type": "string",
+            "title": "The Relaccountnumber Schema",
+            "default": "",
+            "examples": [
+              "HK040001020000024577001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CreateDate": {
+            "$id": "#/properties/list/items/properties/CreateDate",
+            "type": "integer",
+            "title": "The Createdate Schema",
+            "default": 0,
+            "examples": [
+              1559819099000
+            ]
+          },
+          "AccountNumber": {
+            "$id": "#/properties/list/items/properties/AccountNumber",
+            "type": "string",
+            "title": "The Accountnumber Schema",
+            "default": "",
+            "examples": [
+              "HK760001020000024579100"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CurrencyCode": {
+            "$id": "#/properties/list/items/properties/CurrencyCode",
+            "type": "string",
+            "title": "The Currencycode Schema",
+            "default": "",
+            "examples": [
+              "HKD"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "AccountStatus": {
+            "$id": "#/properties/list/items/properties/AccountStatus",
+            "type": "string",
+            "title": "The Accountstatus Schema",
+            "default": "",
+            "examples": [
+              "A"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ClearingCode": {
+            "$id": "#/properties/list/items/properties/ClearingCode",
+            "type": "string",
+            "title": "The Clearingcode Schema",
+            "default": "",
+            "examples": [
+              "0001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CustomerNumber": {
+            "$id": "#/properties/list/items/properties/CustomerNumber",
+            "type": "string",
+            "title": "The Customernumber Schema",
+            "default": "",
+            "examples": [
+              "020000001373"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ID": {
+            "$id": "#/properties/list/items/properties/ID",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "09ceb354d0ac4a959697aa663e8a512f"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CountryCode": {
+            "$id": "#/properties/list/items/properties/CountryCode",
+            "type": "string",
+            "title": "The Countrycode Schema",
+            "default": "",
+            "examples": [
+              "HK"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "DockerId": {
+            "$id": "#/properties/list/items/properties/DockerId",
+            "type": "string",
+            "title": "The Dockerid Schema",
+            "default": "",
+            "examples": [
+              ""
+            ],
+            "pattern": "^(.*)$"
+          },
+          "BranchCode": {
+            "$id": "#/properties/list/items/properties/BranchCode",
+            "type": "string",
+            "title": "The Branchcode Schema",
+            "default": "",
+            "examples": [
+              "020"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

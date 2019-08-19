@@ -1,0 +1,115 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "\\d"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "enum": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "accountnumber",
+        "contractNumber",
+        "installmentDueDate",
+        "interestamount",
+        "loanAmount",
+        "penatlyAmount",
+        "loanperiod"
+      ],
+      "properties": {
+        "accountnumber": {
+          "$id": "#/properties/data/properties/accountnumber",
+          "type": "string",
+          "title": "The Accountnumber Schema",
+          "default": "",
+          "examples": [
+            "HK620001001000005086600"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "contractNumber": {
+          "$id": "#/properties/data/properties/contractNumber",
+          "type": "string",
+          "title": "The Contractnumber Schema",
+          "default": "",
+          "examples": [
+            "000000003"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "installmentDueDate": {
+          "$id": "#/properties/data/properties/installmentDueDate",
+          "type": "integer",
+          "title": "The Installmentduedate Schema",
+          "default": 0,
+          "examples": [
+            1720627199999
+          ]
+        },
+        "interestamount": {
+          "$id": "#/properties/data/properties/interestamount",
+          "type": "number",
+          "title": "The Interestamount Schema",
+          "default": 0,
+          "examples": [
+            6140
+          ]
+        },
+        "loanAmount": {
+          "$id": "#/properties/data/properties/loanAmount",
+          "type": "number",
+          "title": "The Loanamount Schema",
+          "default": 0,
+          "examples": [
+            10000
+          ]
+        },
+        "penatlyAmount": {
+          "$id": "#/properties/data/properties/penatlyAmount",
+          "type": "number",
+          "title": "The Penatlyamount Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "loanperiod": {
+          "$id": "#/properties/data/properties/loanperiod",
+          "type": "number",
+          "title": "The Loanperiod Schema",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        }
+      }
+    }
+  }
+}

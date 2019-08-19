@@ -1,0 +1,272 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "Transaction Accepted"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "id",
+          "stockaccountnumber",
+          "settlementaccount",
+          "stockcode",
+          "stockname",
+          "ordertype",
+          "tradingoption",
+          "sharingno",
+          "tradingprice",
+          "tradingamount",
+          "tradingcommission",
+          "custodycharges",
+          "transactionamount",
+          "currencycode",
+          "requesttime",
+          "expirydate",
+          "statuscode",
+          "status",
+          "operationreasons",
+          "operationdate",
+          "lastupdatedate"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/data/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "56da9b5903b9491b860bf70c1d4ca21c"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "stockaccountnumber": {
+            "$id": "#/properties/data/items/properties/stockaccountnumber",
+            "type": "string",
+            "title": "The Stockaccountnumber Schema",
+            "default": "",
+            "examples": [
+              "HK060001001000000008300"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "settlementaccount": {
+            "$id": "#/properties/data/items/properties/settlementaccount",
+            "type": "string",
+            "title": "The Settlementaccount Schema",
+            "default": "",
+            "examples": [
+              "HK440001001000006381001"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "stockcode": {
+            "$id": "#/properties/data/items/properties/stockcode",
+            "type": "string",
+            "title": "The Stockcode Schema",
+            "default": "",
+            "examples": [
+              "00112.HK"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "stockname": {
+            "$id": "#/properties/data/items/properties/stockname",
+            "type": ["null","string"],
+            "title": "The Stockname Schema",
+            "default": "",
+            "examples": [
+              "LERTHAI GROUP"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ordertype": {
+            "$id": "#/properties/data/items/properties/ordertype",
+            "type": "string",
+            "title": "The Ordertype Schema",
+            "default": "",
+            "examples": [
+              "Fix Price"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "tradingoption": {
+            "$id": "#/properties/data/items/properties/tradingoption",
+            "type": "string",
+            "title": "The Tradingoption Schema",
+            "default": "",
+            "examples": [
+              "Buy"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "sharingno": {
+            "$id": "#/properties/data/items/properties/sharingno",
+            "type": "integer",
+            "title": "The Sharingno Schema",
+            "default": 0,
+            "examples": [
+              200
+            ]
+          },
+          "tradingprice": {
+            "$id": "#/properties/data/items/properties/tradingprice",
+            "type": "number",
+            "title": "The Tradingprice Schema",
+            "default": 0.0,
+            "examples": [
+              7.2
+            ]
+          },
+          "tradingamount": {
+            "$id": "#/properties/data/items/properties/tradingamount",
+            "type": "number",
+            "title": "The Tradingamount Schema",
+            "default": 0,
+            "examples": [
+              1440
+            ]
+          },
+          "tradingcommission": {
+            "$id": "#/properties/data/items/properties/tradingcommission",
+            "type": "number",
+            "title": "The Tradingcommission Schema",
+            "default": 0.0,
+            "examples": [
+              1.44
+            ]
+          },
+          "custodycharges": {
+            "$id": "#/properties/data/items/properties/custodycharges",
+            "type": "number",
+            "title": "The Custodycharges Schema",
+            "default": 0,
+            "examples": [
+              10
+            ]
+          },
+          "transactionamount": {
+            "$id": "#/properties/data/items/properties/transactionamount",
+            "type": "number",
+            "title": "The Transactionamount Schema",
+            "default": 0.0,
+            "examples": [
+              1451.44
+            ]
+          },
+          "currencycode": {
+            "$id": "#/properties/data/items/properties/currencycode",
+            "type": "string",
+            "title": "The Currencycode Schema",
+            "default": "",
+            "examples": [
+              "HKD"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "requesttime": {
+            "$id": "#/properties/data/items/properties/requesttime",
+            "type": "integer",
+            "title": "The Requesttime Schema",
+            "default": 0,
+            "examples": [
+              1564583947169
+            ]
+          },
+          "expirydate": {
+            "$id": "#/properties/data/items/properties/expirydate",
+            "type": [
+              "null",
+              "integer"
+            ],
+            "title": "The Expirydate Schema",
+            "default": 0,
+            "examples": [
+              1564680709555
+            ]
+          },
+          "statuscode": {
+            "$id": "#/properties/data/items/properties/statuscode",
+            "type": "string",
+            "title": "The Statuscode Schema",
+            "default": "",
+            "examples": [
+              "2"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "status": {
+            "$id": "#/properties/data/items/properties/status",
+            "type": "string",
+            "title": "The Status Schema",
+            "default": "",
+            "examples": [
+              "reject"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "operationreasons": {
+            "$id": "#/properties/data/items/properties/operationreasons",
+            "type": ["null","string"],
+            "title": "The Operationreasons Schema",
+            "default": "",
+            "examples": [
+              "reject"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "operationdate": {
+            "$id": "#/properties/data/items/properties/operationdate",
+            "type": ["null","integer"],
+            "title": "The Operationdate Schema",
+            "default": 0,
+            "examples": [
+              1565136002329
+            ]
+          },
+          "lastupdatedate": {
+            "$id": "#/properties/data/items/properties/lastupdatedate",
+            "type": "integer",
+            "title": "The Lastupdatedate Schema",
+            "default": 0,
+            "examples": [
+              1565136002329
+            ]
+          }
+        }
+      }
+    }
+  }
+}

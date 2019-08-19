@@ -1,0 +1,4 @@
+{
+  "newsettleaccountnumber": "HK440001001000006381001",
+  "stkaccountnumber": "HK060001001000000008300"
+}
